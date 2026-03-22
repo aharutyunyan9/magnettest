@@ -7,6 +7,7 @@ class LoginPage(BasePage):
     # locators
     EMAIL_INPUT = "#login-email"
     PASSWORD_INPUT = "#login-password"
+    PASSWORD_INPUT = "#login-password"
     SUBMIT_BUTTON = "button[type='submit']"
 
     def open(self):
@@ -17,4 +18,4 @@ class LoginPage(BasePage):
         self.page.fill(self.EMAIL_INPUT, email)
         self.page.fill(self.PASSWORD_INPUT, password)
         self.page.locator(self.SUBMIT_BUTTON).click()
-        self.page.wait_for_timeout(3000)
+        self.page.wait_for_timeout(4000)
