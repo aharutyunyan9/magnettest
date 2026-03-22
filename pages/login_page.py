@@ -17,4 +17,4 @@ class LoginPage(BasePage):
         self.page.fill(self.EMAIL_INPUT, email)
         self.page.fill(self.PASSWORD_INPUT, password)
         self.page.locator(self.SUBMIT_BUTTON).click()
-        self.page.wait_for_timeout(3000)
+        self.page.wait_for_timeout(4000)
