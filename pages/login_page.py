@@ -7,6 +7,7 @@ class LoginPage(BasePage):
     # locators
     EMAIL_INPUT = "#login-email"
     PASSWORD_INPUT = "#login-password"
+    PASSWORD_INPUT = "#login-password"
     SUBMIT_BUTTON = "button[type='submit']"
 
     def open(self):
